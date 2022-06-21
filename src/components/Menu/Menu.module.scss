@@ -1,0 +1,72 @@
+.menu {
+  position: relative;
+  transform: skewY(-15deg);
+  li {
+    position: relative;
+    background-color: #3e4046;
+    list-style: none;
+    padding: 15px;
+    width: 200px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: 0.5s;
+
+    &:hover {
+      transform: translateX(-50px);
+      background-color: #670097;
+    }
+
+    &:hover .link {
+      color: #fff;
+    }
+
+    &:hover::before {
+      background-color: #5d008e;
+    }
+
+    &::before {
+      content: "";
+      height: 100%;
+      width: 40px;
+      background-color: #2e3133;
+      transition: 0.5s;
+      // main things
+      position: absolute;
+      top: 0;
+      left: -40px;
+      transform-origin: right;
+      transform: skewY(45deg);
+    }
+
+    &:hover::after {
+      background-color: #5c018d;
+    }
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 40px;
+      transition: 0.5s;
+      background-color: #35383e;
+      // main things
+      position: absolute;
+      top: -40px;
+      left: 0;
+      transform-origin: bottom;
+      transform: skewX(45deg);
+    }
+
+    &:last-child::after {
+      box-shadow: -100px 100px 20px rgba($color: #000000, $alpha: 0.3);
+    }
+  }
+
+  .link {
+    color: #999;
+    text-transform: uppercase;
+    transition: 0.5s;
+  }
+}
