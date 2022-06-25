@@ -1,6 +1,6 @@
 export type Styles = {
-  'link': string;
-  'menu': string;
+  link: string;
+  menu: string;
 };
 
 export type ClassNames = keyof Styles;

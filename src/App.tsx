@@ -1,7 +1,9 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
 import styled from "styled-components";
 
 import { Menu } from "./components/Menu";
+import { TeamPage } from "./pages/Team";
 
 const StyledApp = styled.div`
   height: 100vh;
@@ -10,7 +12,10 @@ const StyledApp = styled.div`
 const App: React.FC = () => {
   return (
     <StyledApp>
-      <Menu />
+      <Routes>
+        <Route path="/" element={<Menu />} />
+        <Route path="/team" element={<TeamPage />} />
+      </Routes>
     </StyledApp>
   );
 };
