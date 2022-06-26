@@ -1,5 +1,19 @@
 import React from "react";
+import { Col, Row } from "antd";
+
+import styled from "styled-components";
+import { EmployeesList } from "../../components/EmployeesList";
+
+const StyledTeamPage = styled(Row)`
+  height: 100%;
+`;
 
 export const TeamPage: React.FC = () => {
-  return <div>TeamPage</div>;
+  return (
+    <StyledTeamPage justify="center" align="middle">
+      <Col>
+        <EmployeesList />
+      </Col>
+    </StyledTeamPage>
+  );
 };

@@ -1,0 +1,9 @@
+.imployee {
+  display: flex;
+  &-avatar {
+    flex: 1;
+  }
+  &-info {
+    flex: 2;
+  }
+}
