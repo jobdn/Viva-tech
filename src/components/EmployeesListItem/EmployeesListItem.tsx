@@ -1,21 +1,42 @@
-import { Skeleton } from "antd";
 import React from "react";
+import { GithubFilled } from "@ant-design/icons";
+import { useSpring, animated } from "react-spring";
+import axios from "axios";
+
 import styled from "styled-components";
 import styles from "./EmployeesListItem.module.scss";
 
-const StyledEmployeesListItem = styled.div`
-  border-radius: 10px;
-  height: 200px;
-  width: 600px;
-  background-color: #3e4046;
-  box-shadow: 5px 5px 20px rgba(68, 5, 102, 0.302);
-`;
+const StyledEmployeesListItem = styled(animated.div)``;
 
-export const EmployeesListItem = () => {
+interface IYemployee {
+  avatar: string;
+  url: string;
+  name: string;
+  company: string | null;
+  blog: string;
+  email: string | null;
+}
+
+const yemployee: IYemployee = {
+  avatar: "https://avatars.githubusercontent.com/u/100018059?v=4",
+  url: "https://github.com/jobdn",
+  name: "Pisarev Danila",
+  blog: "jobdan@bk.ru",
+  company: null,
+  email: null,
+};
+
+export const EmployeesListItem: React.FC = () => {
+  const props = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+    delay: 200,
+  });
+
   return (
-    <StyledEmployeesListItem className={styles.imployee}>
+    <StyledEmployeesListItem style={props} className={styles.imployee}>
       <div className={styles["imployee-avatar"]}>
-        <img src="" alt="" />
+        <img src={yemployee.avatar} alt="avatar" />
       </div>
       <div className={styles["imployee-info"]}>
         <div className="yemployee__name">
@@ -23,13 +44,16 @@ export const EmployeesListItem = () => {
           <span>Danila Pisarev</span>
         </div>
         <div className="yemployee__stack">
-          Stack: <span>JS, HTML, CSS</span>
+          Direction: <span>Front-end</span>
         </div>
+
         <div className="yemployee__contacts">
-          linkedin icon: <a href="">Linkedin</a>
-        </div>
-        <div className="yemployee__contacts">
-          Github icon: <a href="">Github</a>
+          Links:
+          <span>
+            <a href={yemployee.url}>
+              <GithubFilled />
+            </a>
+          </span>
         </div>
       </div>
     </StyledEmployeesListItem>
