@@ -35,17 +35,17 @@ export const EmployeeCard: React.FC<{ yemployee: IYemployee }> = ({
         </div>
         <div className={styles["card-links"]}>
           <div className={styles["link-container"]}>
-            <a href={yemployee.github} className={styles.link}>
+            <a href={yemployee.github} target="_blank" className={styles.link}>
               <GithubFilled />
             </a>
           </div>
           <div className={styles["link-container"]}>
-            <a href={yemployee.linkedin} className={styles.link}>
+            <a href={yemployee.linkedin} target="_blank" className={styles.link}>
               <LinkedinFilled />
             </a>
           </div>
           <div className={styles["link-container"]}>
-            <a href={yemployee.telegram} className={styles.link}>
+            <a href={yemployee.telegram} target="_blank" className={styles.link}>
               <FontAwesomeIcon icon={faPaperPlane} />
             </a>
           </div>
