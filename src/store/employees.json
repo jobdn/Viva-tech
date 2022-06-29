@@ -1,0 +1,35 @@
+[
+  {
+    "avatar": "https://avatars.githubusercontent.com/u/100018059?v=4",
+    "position": "Front-end",
+    "name": "Pisarev Danila",
+    "bio": "1.5 years of work in Front-end",
+    "links": {
+      "github": "https://github.com/jobdn",
+      "linkedin": "https://www.linkedin.com/in/block-dan",
+      "telegram": ""
+    }
+  },
+  {
+    "avatar": "",
+    "position": "Blockchain dev",
+    "name": "Nichita Kravchenko",
+    "bio": "1 Year of working blockchain",
+    "links": {
+      "github": "https://github.com/jobdn",
+      "linkedin": "https://www.linkedin.com/in/block-dan",
+      "telegram": ""
+    }
+  },
+  {
+    "avatar": "",
+    "position": "Blockchain dev",
+    "name": "Misha Cheban",
+    "bio": "1 Year of working blockchain",
+    "links": {
+      "github": "https://github.com/jobdn",
+      "linkedin": "https://www.linkedin.com/in/block-dan",
+      "telegram": ""
+    }
+  }
+]

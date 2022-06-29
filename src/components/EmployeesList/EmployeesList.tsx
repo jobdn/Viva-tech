@@ -1,35 +1,30 @@
 import React from "react";
-import styled from "styled-components";
-import { EmployeesListItem } from "../EmployeesListItem";
+import { EmployeeCard } from "../EmployeeCard";
 
-const StyledEmployeesList = styled.div`
-  width: 100%;
-`;
-
-interface IYemployee {
+export interface IYemployee {
   avatar: string;
-  url: string;
+  position: string;
   name: string;
-  company: string | null;
-  blog: string;
-  email: string | null;
+  bio: string;
+  github: string;
+  linkedin: string;
+  telegram: string;
 }
 
 const yemployee: IYemployee = {
   avatar: "https://avatars.githubusercontent.com/u/100018059?v=4",
-  url: "https://github.com/jobdn",
+  position: "Front-end",
+  github: "https://github.com/jobdn",
   name: "Pisarev Danila",
-  blog: "jobdan@bk.ru",
-  company: null,
-  email: null,
+  bio: "1.5 years of work in Front-end",
+  linkedin: "https://www.linkedin.com/in/block-dan",
+  telegram: "",
 };
 
-const employees = [];
-
-export const EmployeesList = () => {
+export const EmployeesList: React.FC = () => {
   return (
     <div>
-      <EmployeesListItem />
+      <EmployeeCard yemployee={yemployee} />
     </div>
   );
 };
