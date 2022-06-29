@@ -1,7 +1,6 @@
 import React from "react";
 import { GithubFilled } from "@ant-design/icons";
 import { useSpring, animated } from "react-spring";
-import axios from "axios";
 
 import styled from "styled-components";
 import styles from "./EmployeesListItem.module.scss";
