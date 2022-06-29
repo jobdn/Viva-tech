@@ -9,6 +9,8 @@
   color: #cdcdcd;
   box-shadow: 5px 5px 15px rgba($color: #000000, $alpha: 0.9);
   cursor: pointer;
+  margin: 30px;
+  user-select: none;
 
   &-img {
     grid-area: "img";
