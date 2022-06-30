@@ -1,6 +1,7 @@
+$cardWidth: 300px;
 .card {
   display: grid;
-  grid-template-columns: 300px;
+  grid-template-columns: $cardWidth;
   grid-template-rows: repeat(2, 210px) 80px;
   grid-template-areas: "img" "text" "links";
   border-radius: 18px;
@@ -91,7 +92,6 @@
   border-radius: 18px;
   position: absolute;
   z-index: -1;
-  // inset???
   inset: -3px;
   -webkit-filter: blur(8px);
   filter: blur(8px);

@@ -3,30 +3,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { GithubFilled, LinkedinFilled } from "@ant-design/icons";
 import Tilt from "react-parallax-tilt";
-import { useSpring, animated } from "react-spring";
 
 import styles from "./EmployeeCard.module.scss";
 import { IYemployee } from "../../models/Yemployee";
 import styled from "styled-components";
 
-const StyledEmployeeCard = styled(animated.div)``;
+const StyledEmployeeCard = styled.div``;
 
 export const EmployeeCard: React.FC<{ yemployee: IYemployee }> = ({
   yemployee,
 }) => {
-  const props = useSpring({
-    from: {
-      opacity: 0,
-    },
-    to: {
-      opacity: 1,
-    },
-  });
-
   const cardClass = styles.card + " " + styles.rgb;
+
   return (
     <Tilt scale={1.06}>
-      <StyledEmployeeCard style={props} className={cardClass}>
+      <StyledEmployeeCard className={cardClass}>
         <div className={styles["card-img"]}>
           <img src={yemployee.avatar} alt="" />
         </div>
