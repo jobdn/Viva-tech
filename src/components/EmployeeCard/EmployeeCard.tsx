@@ -6,7 +6,7 @@ import Tilt from "react-parallax-tilt";
 import { useSpring, animated } from "react-spring";
 
 import styles from "./EmployeeCard.module.scss";
-import { IYemployee } from "../EmployeesList/EmployeesList";
+import { IYemployee } from "../../models/Yemployee";
 import styled from "styled-components";
 
 const StyledEmployeeCard = styled(animated.div)``;
@@ -22,9 +22,11 @@ export const EmployeeCard: React.FC<{ yemployee: IYemployee }> = ({
       opacity: 1,
     },
   });
+
+  const cardClass = styles.card + " " + styles.rgb;
   return (
     <Tilt scale={1.06}>
-      <StyledEmployeeCard style={props} className={styles.card}>
+      <StyledEmployeeCard style={props} className={cardClass}>
         <div className={styles["card-img"]}>
           <img src={yemployee.avatar} alt="" />
         </div>
@@ -35,17 +37,32 @@ export const EmployeeCard: React.FC<{ yemployee: IYemployee }> = ({
         </div>
         <div className={styles["card-links"]}>
           <div className={styles["link-container"]}>
-            <a href={yemployee.github} target="_blank" className={styles.link}>
+            <a
+              href={yemployee.links.github}
+              target="_blank"
+              rel="noreferrer"
+              className={styles.link}
+            >
               <GithubFilled />
             </a>
           </div>
           <div className={styles["link-container"]}>
-            <a href={yemployee.linkedin} target="_blank" className={styles.link}>
+            <a
+              href={yemployee.links.linkedin}
+              target="_blank"
+              rel="noreferrer"
+              className={styles.link}
+            >
               <LinkedinFilled />
             </a>
           </div>
           <div className={styles["link-container"]}>
-            <a href={yemployee.telegram} target="_blank" className={styles.link}>
+            <a
+              href={yemployee.links.telegram}
+              target="_blank"
+              rel="noreferrer"
+              className={styles.link}
+            >
               <FontAwesomeIcon icon={faPaperPlane} />
             </a>
           </div>

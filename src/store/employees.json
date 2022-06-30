@@ -1,7 +1,8 @@
 [
   {
+    "id": 0,
     "avatar": "https://avatars.githubusercontent.com/u/100018059?v=4",
-    "position": "Front-end",
+    "position": "Front-end developer",
     "name": "Pisarev Danila",
     "bio": "1.5 years of work in Front-end",
     "links": {
@@ -11,24 +12,38 @@
     }
   },
   {
-    "avatar": "",
-    "position": "Blockchain dev",
+    "id": 1,
+    "avatar": "https://media-exp2.licdn.com/dms/image/C4D03AQE7YETdJJImtQ/profile-displayphoto-shrink_800_800/0/1583589591756?e=1661990400&v=beta&t=WkpZl4XwM2rMwJFEw9fiaqCM2oL8w6CcP8pOPmoZ9No",
+    "position": "Blockchain developer",
     "name": "Nichita Kravchenko",
     "bio": "1 Year of working blockchain",
     "links": {
-      "github": "https://github.com/jobdn",
-      "linkedin": "https://www.linkedin.com/in/block-dan",
+      "github": "https://github.com/NiceArti",
+      "linkedin": "https://www.linkedin.com/in/nikita-kravcenko-1ba4511a4/",
       "telegram": ""
     }
   },
   {
-    "avatar": "",
-    "position": "Blockchain dev",
+    "id": 2,
+    "avatar": "https://media-exp2.licdn.com/dms/image/C5603AQEEYk1KLhwc-A/profile-displayphoto-shrink_200_200/0/1646763926322?e=1661990400&v=beta&t=gQZu_sgIQ2Vs5Xg2MpzX_1rYUEOVXEn9MktzRBZ5rPM",
+    "position": "Blockchain deveveloper",
     "name": "Misha Cheban",
     "bio": "1 Year of working blockchain",
     "links": {
-      "github": "https://github.com/jobdn",
-      "linkedin": "https://www.linkedin.com/in/block-dan",
+      "github": "https://github.com/apm1001",
+      "linkedin": "https://www.linkedin.com/in/mihail-ceban-11ab7a233/",
+      "telegram": ""
+    }
+  },
+  {
+    "id": 3,
+    "avatar": "https://media-exp2.licdn.com/dms/image/C4E03AQGOTV1F4flx9Q/profile-displayphoto-shrink_200_200/0/1613925440713?e=1661990400&v=beta&t=DnofoWxX4Luaj9L9YoSW2S-yyEjekZyS1LIim2D1ZnQ",
+    "position": "Back-end developer",
+    "name": "Ovidiu Cristian Rabii",
+    "bio": "1 Year of working blockchain",
+    "links": {
+      "github": "https://github.com/Good-bug",
+      "linkedin": "https://www.linkedin.com/in/ovidiu-cristian-rabii-0688701aa/",
       "telegram": ""
     }
   }

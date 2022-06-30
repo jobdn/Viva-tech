@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 
 const StyledMenu = styled(Row)`
   height: 100%;
-  justify-content: center;
 
   @media screen and (min-width: 1024px) {
     justify-content: start;
@@ -17,7 +16,7 @@ const StyledMenu = styled(Row)`
 
 export const Menu: React.FC = () => {
   return (
-    <StyledMenu align="middle">
+    <StyledMenu align="middle" justify="center">
       <Col>
         <ul className={styles.menu}>
           <li style={{ zIndex: 4 }}>

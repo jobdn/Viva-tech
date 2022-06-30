@@ -1,30 +1,22 @@
 import React from "react";
 import { EmployeeCard } from "../EmployeeCard";
+import yemployees from "../../store/employees.json";
+import styled from "styled-components";
 
-export interface IYemployee {
-  avatar: string;
-  position: string;
-  name: string;
-  bio: string;
-  github: string;
-  linkedin: string;
-  telegram: string;
-}
-
-const yemployee: IYemployee = {
-  avatar: "https://avatars.githubusercontent.com/u/100018059?v=4",
-  position: "Front-end",
-  github: "https://github.com/jobdn",
-  name: "Pisarev Danila",
-  bio: "1.5 years of work in Front-end",
-  linkedin: "https://www.linkedin.com/in/block-dan",
-  telegram: "",
-};
+const StyledEmployeesList = styled.div`
+  display: flex;
+  gap: 60px;
+  transition: 0.3s;
+  flex-wrap: wrap;
+  justify-content: center;
+`;
 
 export const EmployeesList: React.FC = () => {
   return (
-    <div>
-      <EmployeeCard yemployee={yemployee} />
-    </div>
+    <StyledEmployeesList>
+      {yemployees.map((yemployee) => (
+        <EmployeeCard key={yemployee.id} yemployee={yemployee} />
+      ))}
+    </StyledEmployeesList>
   );
 };
