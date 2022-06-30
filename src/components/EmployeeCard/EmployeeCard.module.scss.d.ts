@@ -5,6 +5,7 @@ export type Styles = {
   'card-text': string;
   'link': string;
   'link-container': string;
+  'rgb': string;
   'yemployee-bio': string;
   'yemployee-name': string;
   'yemployee-position': string;

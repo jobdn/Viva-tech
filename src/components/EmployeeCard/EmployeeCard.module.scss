@@ -7,10 +7,16 @@
   background-color: #191a1d;
   text-align: center;
   color: #cdcdcd;
-  box-shadow: 5px 5px 15px rgba($color: #000000, $alpha: 0.9);
   cursor: pointer;
-  margin: 30px;
+  transition: 0.3s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
+  @media screen and (max-width: 500px) {
+    grid-template-columns: 280px;
+    grid-template-rows: repeat(2, 170px) 70px;
+  }
 
   &-img {
     grid-area: "img";
@@ -62,5 +68,57 @@
 
   &-position {
     color: #e46e73;
+  }
+}
+
+.rgb::after {
+  content: "";
+  background: linear-gradient(
+      45deg,
+      #ff0000 0%,
+      #ff9a00 10%,
+      #d0de21 20%,
+      #4fdc4a 30%,
+      #3fdad8 40%,
+      #2fc9e2 50%,
+      #1c7fee 60%,
+      #5f15f2 70%,
+      #ba0cf8 80%,
+      #fb07d9 90%,
+      #ff0000 100%
+    )
+    repeat 0% 0% / 300% 100%;
+  border-radius: 18px;
+  position: absolute;
+  z-index: -1;
+  // inset???
+  inset: -3px;
+  -webkit-filter: blur(8px);
+  filter: blur(8px);
+  -webkit-animation: rgb 6s linear infinite;
+  animation: rgb 6s linear infinite;
+}
+
+@-webkit-keyframes rgb {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes rgb {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }

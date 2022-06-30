@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { EmployeesList } from "../../components/EmployeesList";
 
 const StyledTeamPage = styled(Row)`
+  padding-top: 40px;
   height: 100%;
 `;
 

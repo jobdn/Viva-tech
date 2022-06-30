@@ -22,9 +22,11 @@ export const EmployeeCard: React.FC<{ yemployee: IYemployee }> = ({
       opacity: 1,
     },
   });
+
+  const cardClass = styles.card + " " + styles.rgb;
   return (
     <Tilt scale={1.06}>
-      <StyledEmployeeCard style={props} className={styles.card}>
+      <StyledEmployeeCard style={props} className={cardClass}>
         <div className={styles["card-img"]}>
           <img src={yemployee.avatar} alt="" />
         </div>
