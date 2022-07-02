@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import styled from "styled-components";
 
 import { Menu } from "./components/Menu";
+import { About } from "./pages/About";
 import { TeamPage } from "./pages/Team";
 
 const StyledApp = styled.div`
@@ -15,6 +16,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Menu />} />
         <Route path="/team" element={<TeamPage />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </StyledApp>
   );
