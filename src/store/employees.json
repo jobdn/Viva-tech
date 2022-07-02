@@ -46,5 +46,17 @@
       "linkedin": "https://www.linkedin.com/in/ovidiu-cristian-rabii-0688701aa/",
       "telegram": ""
     }
+  },
+  {
+    "id": 4,
+    "avatar": "https://media-exp2.licdn.com/dms/image/D4E35AQGYB1GNBjHFFg/profile-framedphoto-shrink_200_200/0/1655715052686?e=1657278000&v=beta&t=JUizhgmVlFssLLRkpSlzj1eTmlbukw8_VXHjaHjLhLo",
+    "position": "Back-end developer",
+    "name": "Igor Terzi",
+    "bio": "1 Year of working blockchain",
+    "links": {
+      "github": "https://github.com/IGorTerzi",
+      "linkedin": "https://www.linkedin.com/in/dj-terzi-8a33a5239/",
+      "telegram": ""
+    }
   }
 ]
