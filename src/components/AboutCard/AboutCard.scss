@@ -1,19 +1,123 @@
-.card {
-  width: 980px;
-  height: 550px;
-  background-color: white;
-  box-shadow: 0px 6px 20px #ffe3de;
-  border-radius: 30px;
-  position: relative;
-}
-
 .about-card {
   height: 100%;
+  padding: 0 30px;
 
   &__container {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
+  }
+}
+
+.card {
+  width: 900px;
+  @media screen and (max-width: 1024px) {
+    max-width: 600px;
+    padding: 10px 38px;
+  }
+
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 6px 20px #ffe3de;
+  border-radius: 30px;
+  position: relative;
+  padding: 38px;
+
+  &__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 10px;
+    }
+    & .navbar {
+      &__title {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 36px;
+        color: #000000;
+        letter-spacing: 4px;
+        @media screen and (max-width: 1024px) {
+          font-size: 16px;
+          line-height: 30px;
+        }
+      }
+      &__decs {
+        padding-right: 20px;
+        font-size: 25px;
+        line-height: 23px;
+        color: #4856df;
+        @media screen and (max-width: 1024px) {
+          font-size: 20px;
+        }
+        @media screen and (max-width: 500px) {
+          font-size: 16px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+
+  &__content.content {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 75px;
+    color: #333333;
+    margin-bottom: 50px;
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 10px;
+      font-size: 30px;
+      line-height: 28px;
+    }
+    @media screen and (max-width: 500px) {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+  &__desc {
+    font-style: italic;
+    font-size: 20px;
+
+    color: #333333;
+    width: 500px;
+    line-height: 48px;
+
+    @media screen and (max-width: 1024px) {
+      line-height: 28px;
+      width: auto;
+    }
+
+    @media screen and (max-width: 500px) {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+
+  &__img {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+    @media screen and (max-width: 1024px) {
+      width: 300px;
+    }
+    @media screen and (max-width: 424px) {
+      width: 100%;
+    }
   }
 }
