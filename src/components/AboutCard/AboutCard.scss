@@ -1,6 +1,7 @@
 .about-card {
   height: 100%;
   padding: 0 30px;
+  user-select: none;
 
   &__container {
     display: flex;

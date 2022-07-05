@@ -10,14 +10,12 @@ export const AboutCard: React.FC = () => {
   const animatedProps = useSpring({
     from: { opacity: 0 },
     to: { opacity: 1 },
-    delay: 100,
   });
 
   // TODO: make it as a props
-  const desc = `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-  Expedita pariatur iste eius nesciunt, unde ipsa corrupti!
-  Aspernatur nam iure necessitatibus minima, beatae ab reiciendis
-  totam perferendis, minus repellendus molestias delectus!"`;
+  const desc = `We are a team of enthusiastic developers. 
+    We can make the use of blockchain technologies easier for 
+    users who are not familiar with them!`;
 
   React.useEffect(() => {
     function checkMobile() {
@@ -44,7 +42,7 @@ export const AboutCard: React.FC = () => {
             <div>
               <div className="card__title">Blockchain</div>
               <div className="card__desc">
-                {isMobile ? desc.slice(0, 50) + "...." : desc}
+                {isMobile ? desc.slice(0, 59) + "...." : desc}
               </div>
             </div>
             <div className="card__img">

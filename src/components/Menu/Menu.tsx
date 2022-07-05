@@ -10,7 +10,7 @@ const StyledMenu = styled(Row)`
 
   @media screen and (min-width: 1024px) {
     justify-content: start;
-    padding-left: 100px;
+    padding-left: 180px;
   }
 `;
 
@@ -20,23 +20,23 @@ export const Menu: React.FC = () => {
       <Col>
         <ul className={styles.menu}>
           <li style={{ zIndex: 4 }}>
-            <Link to="/" className={styles.link}>
-              Home
+            <Link to="/about" className={styles.link}>
+              About
             </Link>
           </li>
           <li style={{ zIndex: 3 }}>
-            <Link to="/projects" className={styles.link}>
-              Projects
-            </Link>
-          </li>
-          <li style={{ zIndex: 2 }}>
             <Link to="/team" className={styles.link}>
               Our team
             </Link>
           </li>
+          <li style={{ zIndex: 2 }}>
+            <Link to="/projects" className={styles.link}>
+              Projects
+            </Link>
+          </li>
           <li style={{ zIndex: 1 }}>
-            <Link to="/about" className={styles.link}>
-              About
+            <Link to="/contact" className={styles.link}>
+              Contact with us
             </Link>
           </li>
         </ul>
