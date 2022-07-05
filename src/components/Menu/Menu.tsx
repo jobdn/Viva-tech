@@ -19,24 +19,14 @@ export const Menu: React.FC = () => {
     <StyledMenu align="middle" justify="center">
       <Col>
         <ul className={styles.menu}>
-          <li style={{ zIndex: 4 }}>
+          <li style={{ zIndex: 2 }}>
             <Link to="/about" className={styles.link}>
               About
             </Link>
           </li>
-          <li style={{ zIndex: 3 }}>
+          <li style={{ zIndex: 1 }}>
             <Link to="/team" className={styles.link}>
               Our team
-            </Link>
-          </li>
-          <li style={{ zIndex: 2 }}>
-            <Link to="/projects" className={styles.link}>
-              Projects
-            </Link>
-          </li>
-          <li style={{ zIndex: 1 }}>
-            <Link to="/contact" className={styles.link}>
-              Contact with us
             </Link>
           </li>
         </ul>
