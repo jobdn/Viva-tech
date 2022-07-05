@@ -12,6 +12,10 @@ const StyledMenu = styled(Row)`
     justify-content: start;
     padding-left: 180px;
   }
+
+  .ant-col {
+    transform: translateX(10%);
+  }
 `;
 
 export const Menu: React.FC = () => {
