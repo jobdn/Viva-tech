@@ -1,5 +1,4 @@
 import React from "react";
-import { useSpring, animated } from "react-spring";
 
 import blockchaimImg from "../../assets/img/blockchain.png";
 
@@ -7,10 +6,6 @@ import "./AboutCard.scss";
 
 export const AboutCard: React.FC = () => {
   const [isMobile, setIsMobile] = React.useState(false);
-  const animatedProps = useSpring({
-    from: { opacity: 0 },
-    to: { opacity: 1 },
-  });
 
   // TODO: make it as a props
   const desc = `We are a team of enthusiastic developers. 
@@ -31,7 +26,7 @@ export const AboutCard: React.FC = () => {
   }, []);
 
   return (
-    <animated.section style={animatedProps} className="about-card">
+    <div className="about-card">
       <div className="about-card__container">
         <div className="card">
           <div className="card__navbar navbar">
@@ -51,6 +46,6 @@ export const AboutCard: React.FC = () => {
           </div>
         </div>
       </div>
-    </animated.section>
+    </div>
   );
 };
