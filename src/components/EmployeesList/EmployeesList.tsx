@@ -1,10 +1,10 @@
 import React from "react";
+import styled from "styled-components";
+
 import { EmployeeCard } from "../EmployeeCard";
 import yemployees from "../../store/employees.json";
-import styled from "styled-components";
-import { useSpring, animated } from "react-spring";
 
-const StyledEmployeesList = styled(animated.div)`
+const StyledEmployeesList = styled.div`
   display: flex;
   gap: 60px;
   transition: 0.3s;
@@ -13,17 +13,8 @@ const StyledEmployeesList = styled(animated.div)`
 `;
 
 export const EmployeesList: React.FC = () => {
-  const animatedProps = useSpring({
-    from: {
-      opacity: 0,
-    },
-    to: {
-      opacity: 1,
-    },
-  });
-
   return (
-    <StyledEmployeesList style={animatedProps}>
+    <StyledEmployeesList>
       {yemployees.map((yemployee) => (
         <EmployeeCard key={yemployee.id} yemployee={yemployee} />
       ))}
