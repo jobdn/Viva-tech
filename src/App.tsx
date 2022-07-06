@@ -1,7 +1,7 @@
 import React from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import styled from "styled-components";
-import { BackButton } from "./components/BackButton";
+import { AppLayout } from "./components/AppLayout";
 
 import { Menu } from "./components/Menu";
 import { About } from "./pages/About";
@@ -14,11 +14,12 @@ const StyledApp = styled.div`
 const App: React.FC = () => {
   return (
     <StyledApp>
-      <BackButton />
       <Routes>
-        <Route path="/" element={<Menu />} />
-        <Route path="/team" element={<TeamPage />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/" element={<AppLayout />}>
+          <Route index element={<Menu />}></Route>
+          <Route path="team" element={<TeamPage />} />
+          <Route path="about" element={<About />} />
+        </Route>
       </Routes>
     </StyledApp>
   );
