@@ -1,10 +1,11 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import { useTransition, animated } from "react-spring";
 
 import { AppLayout } from "../AppLayout";
 import { Menu } from "../Menu";
-import { About } from "../../pages/About";
-import { TeamPage } from "../../pages/Team";
+import { AboutPage } from "../../pages/AboutPage";
+import { TeamPage } from "../../pages/TeamPage";
 
 export const AppRouter: React.FC = () => {
   return (
@@ -12,7 +13,7 @@ export const AppRouter: React.FC = () => {
       <Route path="/" element={<AppLayout />}>
         <Route index element={<Menu />}></Route>
         <Route path="team" element={<TeamPage />} />
-        <Route path="about" element={<About />} />
+        <Route path="about" element={<AboutPage />} />
       </Route>
     </Routes>
   );

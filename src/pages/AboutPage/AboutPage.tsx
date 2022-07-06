@@ -5,7 +5,7 @@ import { AboutCard } from "../../components/AboutCard";
 
 import styles from "./About.module.scss";
 
-export const About: React.FC = () => {
+export const AboutPage: React.FC = () => {
   // TODO: make hook for animated components
   const animatedProps = useSpring({ from: { opacity: 0 }, to: { opacity: 1 } });
   return (
