@@ -1,6 +1,7 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import styled from "styled-components";
+import { BackButton } from "./components/BackButton";
 
 import { Menu } from "./components/Menu";
 import { About } from "./pages/About";
@@ -13,6 +14,7 @@ const StyledApp = styled.div`
 const App: React.FC = () => {
   return (
     <StyledApp>
+      <BackButton />
       <Routes>
         <Route path="/" element={<Menu />} />
         <Route path="/team" element={<TeamPage />} />
