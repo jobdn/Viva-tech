@@ -1,5 +1,5 @@
-import { LeftCircleFilled } from "@ant-design/icons";
 import React from "react";
+import { LeftCircleFilled } from "@ant-design/icons";
 import { useLocation, useNavigate } from "react-router-dom";
 
 import styles from "./BackButton.module.scss";

@@ -1,10 +1,2 @@
-export type Styles = {
-  'link': string;
-  'menu': string;
-};
-
-export type ClassNames = keyof Styles;
-
-declare const styles: Styles;
-
-export default styles;
+export const link: string;
+export const menu: string;

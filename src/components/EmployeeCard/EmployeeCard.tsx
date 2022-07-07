@@ -1,14 +1,12 @@
 import React from "react";
+import Tilt from "react-parallax-tilt";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { GithubFilled, LinkedinFilled } from "@ant-design/icons";
-import Tilt from "react-parallax-tilt";
+
+import { IYemployee } from "../../models/Yemployee";
 
 import styles from "./EmployeeCard.module.scss";
-import { IYemployee } from "../../models/Yemployee";
-import styled from "styled-components";
-
-const StyledEmployeeCard = styled.div``;
 
 export const EmployeeCard: React.FC<{ yemployee: IYemployee }> = ({
   yemployee,
@@ -17,17 +15,17 @@ export const EmployeeCard: React.FC<{ yemployee: IYemployee }> = ({
 
   return (
     <Tilt scale={1.06}>
-      <StyledEmployeeCard className={cardClass}>
-        <div className={styles["card-img"]}>
-          <img src={yemployee.avatar} alt="" />
+      <div className={cardClass}>
+        <div className={styles.cardImg}>
+          <img src={yemployee.avatar} alt="avatar" />
         </div>
-        <div className={styles["card-text"]}>
-          <p className={styles["yemployee-position"]}>{yemployee.position}</p>
-          <h2 className={styles["yemployee-name"]}>{yemployee.name}</h2>
-          <p className={styles["yemployee-bio"]}>{yemployee.bio}</p>
+        <div className={styles.cardText}>
+          <p className={styles.yemployeePosition}>{yemployee.position}</p>
+          <h2 className={styles.yemployeeName}>{yemployee.name}</h2>
+          <p className={styles.yemployeeBio}>{yemployee.bio}</p>
         </div>
-        <div className={styles["card-links"]}>
-          <div className={styles["link-container"]}>
+        <div className={styles.cardLinks}>
+          <div className={styles.linkContainer}>
             <a
               href={yemployee.links.github}
               target="_blank"
@@ -37,7 +35,7 @@ export const EmployeeCard: React.FC<{ yemployee: IYemployee }> = ({
               <GithubFilled />
             </a>
           </div>
-          <div className={styles["link-container"]}>
+          <div className={styles.linkContainer}>
             <a
               href={yemployee.links.linkedin}
               target="_blank"
@@ -47,7 +45,7 @@ export const EmployeeCard: React.FC<{ yemployee: IYemployee }> = ({
               <LinkedinFilled />
             </a>
           </div>
-          <div className={styles["link-container"]}>
+          <div className={styles.linkContainer}>
             <a
               href={yemployee.links.telegram}
               target="_blank"
@@ -58,7 +56,7 @@ export const EmployeeCard: React.FC<{ yemployee: IYemployee }> = ({
             </a>
           </div>
         </div>
-      </StyledEmployeeCard>
+      </div>
     </Tilt>
   );
 };
