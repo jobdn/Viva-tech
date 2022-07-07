@@ -10,7 +10,7 @@ export const AppLayout: React.FC = () => {
   return (
     <Layout className={styles.layout}>
       <BackButton />
-      <Layout.Content>
+      <Layout.Content className={styles.contant}>
         <Outlet />
       </Layout.Content>
     </Layout>

@@ -6,12 +6,11 @@ import { EmployeesList } from "../../components/EmployeesList";
 
 const StyledTeamPage = styled(Row)`
   padding-top: 120px;
-  height: 100%;
 `;
 
 export const TeamPage: React.FC = () => {
   return (
-    <StyledTeamPage justify="center" align="middle">
+    <StyledTeamPage justify="center" align="middle" className="page">
       <Col>
         <EmployeesList />
       </Col>
