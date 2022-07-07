@@ -15,7 +15,7 @@ export const BackButton: React.FC = () => {
   return (
     <button className={"btn " + styles.btnBack} onClick={() => navigate(-1)}>
       <LeftCircleFilled className="icon" />
-      <span className="label">BackButton</span>
+      <span className="label">Go back</span>
     </button>
   );
 };
