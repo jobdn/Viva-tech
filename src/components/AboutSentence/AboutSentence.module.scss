@@ -1,0 +1,28 @@
+.sentenceContainer {
+  height: 70px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.sentence {
+  display: block;
+  background-color: #fff;
+  font-size: 25px;
+  overflow: hidden;
+  padding: 10px 20px;
+
+  &Left {
+    float: left;
+    border-top-right-radius: 20px;
+    transform-origin: left;
+    border-bottom-right-radius: 20px;
+  }
+
+  &Right {
+    float: right;
+    transform-origin: 100% 50%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+}
