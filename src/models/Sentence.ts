@@ -4,4 +4,5 @@ export interface ISentence {
   id: number;
   text: string;
   direction: SentenceDirection;
+  desc?: string;
 }

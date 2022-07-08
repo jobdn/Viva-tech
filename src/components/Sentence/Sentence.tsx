@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import { IAboutSentenceProps } from "../../models/AboutSectionProps";
 
-import styles from "./AboutSentence.module.scss";
+import styles from "./Sentence.module.scss";
 
 const animation = {
   hidden: {
@@ -20,7 +20,7 @@ const animation = {
   }),
 };
 
-export const AboutSentence: React.FC<IAboutSentenceProps> = ({
+export const Sentence: React.FC<IAboutSentenceProps> = ({
   children,
   delay,
   direction,
@@ -34,7 +34,7 @@ export const AboutSentence: React.FC<IAboutSentenceProps> = ({
       className={styles.sentenceContainer}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.3 }}
     >
       <motion.div variants={animation} custom={delay} className={sentenceClass}>
         {children}

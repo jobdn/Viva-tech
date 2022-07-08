@@ -24,7 +24,7 @@ export const ProjectsButton = () => {
       initial="hidden"
       whileInView="visible"
       variants={animation}
-      viewport={{ amount: 1 }}
+      viewport={{ amount: 0.9 }}
       className={styles.btnContainer}
     >
       <Button

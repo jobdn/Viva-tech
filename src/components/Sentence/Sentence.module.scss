@@ -12,6 +12,18 @@
   overflow: hidden;
   padding: 10px 20px;
 
+  @media screen and (max-width: 900px) {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 555px) {
+    max-width: 300px;
+  }
+
   &Left {
     float: left;
     border-top-right-radius: 20px;
