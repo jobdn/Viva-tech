@@ -2,7 +2,7 @@ import React from "react";
 
 import blockchaimImg from "../../assets/img/blockchain.png";
 
-import "./AboutCard.scss";
+import styles from "./AboutCard.module.scss";
 
 export const AboutCard: React.FC = () => {
   const [isMobile, setIsMobile] = React.useState(false);
@@ -26,21 +26,21 @@ export const AboutCard: React.FC = () => {
   }, []);
 
   return (
-    <div className="about-card">
-      <div className="about-card__container">
-        <div className="card">
-          <div className="card__navbar navbar">
-            <div className="navbar__title">Dev 2022</div>
-            <div className="navbar__decs">About us</div>
+    <div className={styles.aboutCard}>
+      <div className={styles.aboutCardContainer}>
+        <div className={styles.card}>
+          <div className={styles.navbar}>
+            <div className={styles.navbarTitle}>Dev 2022</div>
+            <div className={styles.navbarDecs}>About us</div>
           </div>
-          <div className="card__content content">
+          <div className={styles.content}>
             <div>
-              <div className="card__title">Blockchain</div>
-              <div className="card__desc">
+              <div className={styles.cardTitle}>Blockchain experts</div>
+              <div className={styles.cardDesc}>
                 {isMobile ? desc.slice(0, 59) + "...." : desc}
               </div>
             </div>
-            <div className="card__img">
+            <div className={styles.cardImg}>
               <img src={blockchaimImg} alt="card-img"></img>
             </div>
           </div>

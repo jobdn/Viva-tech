@@ -1,0 +1,36 @@
+[
+  {
+    "id": 0,
+    "text": "That's our projects:",
+    "direction": "Left"
+  },
+  {
+    "id": 1,
+    "text": "https://github.com/NiceArti/NFTS",
+    "direction": "Right",
+    "desc": "NFTS"
+  },
+  {
+    "id": 2,
+    "text": "https://github.com/NiceArti/Marketplace",
+    "direction": "Left",
+    "desc": "Marketplace"
+  },
+  {
+    "id": 3,
+    "text": "https://github.com/NiceArti/Trading-Platform",
+    "direction": "Left",
+    "desc": "Platform for trading"
+  },
+  {
+    "id": 4,
+    "text": "One of our developers is involved in development of this project:",
+    "direction": "Right"
+  },
+  {
+    "id": 5,
+    "text": "https://app.ixswap.io/",
+    "direction": "Left",
+    "desc": "ixswap crypto exchange"
+  }
+]

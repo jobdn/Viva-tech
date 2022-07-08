@@ -19,7 +19,7 @@ $cardWidth: 300px;
     grid-template-rows: repeat(2, 170px) 70px;
   }
 
-  &-img {
+  &Img {
     grid-area: "img";
     margin-top: 20px;
     img {
@@ -28,12 +28,12 @@ $cardWidth: 300px;
     }
   }
 
-  &-text {
+  &Text {
     grid-area: "text";
     margin: 25px;
   }
 
-  &-links {
+  &Links {
     height: 100%;
     grid-area: "links";
     display: grid;
@@ -41,7 +41,7 @@ $cardWidth: 300px;
     background-color: #e46e73;
     border-bottom-left-radius: 18px;
     border-bottom-right-radius: 18px;
-    .link-container {
+    .linkContainer {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -58,16 +58,16 @@ $cardWidth: 300px;
 }
 
 .yemployee {
-  &-name {
+  &Name {
     color: #cdcdcd;
     font-size: 32px;
   }
 
-  &-bio {
+  &Bio {
     color: #606061;
   }
 
-  &-position {
+  &Position {
     color: #e46e73;
   }
 }

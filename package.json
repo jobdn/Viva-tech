@@ -19,6 +19,7 @@
     "@types/react-dom": "^18.0.5",
     "antd": "^4.21.3",
     "axios": "^0.27.2",
+    "framer-motion": "^6.4.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-parallax-tilt": "^1.7.43",

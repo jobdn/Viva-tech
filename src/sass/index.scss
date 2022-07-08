@@ -9,3 +9,12 @@
 
 // Components
 @import "./components/buttons";
+
+// Pages
+.page {
+  min-height: inherit;
+  padding-top: 150px;
+  @media screen and (max-width: 425px) {
+    padding-top: 130px;
+  }
+}

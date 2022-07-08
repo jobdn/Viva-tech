@@ -6,6 +6,7 @@ import { AppLayout } from "../AppLayout";
 import { Menu } from "../Menu";
 import { AboutPage } from "../../pages/AboutPage";
 import { TeamPage } from "../../pages/TeamPage";
+import { ProjectsPage } from "../../pages/ProjectsPage";
 
 export const AppRouter: React.FC = () => {
   const location = useLocation();
@@ -32,6 +33,7 @@ export const AppRouter: React.FC = () => {
             <Route index element={<Menu />}></Route>
             <Route path="team" element={<TeamPage />} />
             <Route path="about" element={<AboutPage />} />
+            <Route path="projects" element={<ProjectsPage />} />
           </Route>
         </Routes>
       </animated.div>

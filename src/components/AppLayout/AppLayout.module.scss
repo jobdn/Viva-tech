@@ -1,7 +1,9 @@
 @import "../../sass/abstracts/variables";
 
 .layout {
-  height: 100vh;
   background-color: $bodyBg;
   position: relative;
+  .contant {
+    min-height: 100vh;
+  }
 }
