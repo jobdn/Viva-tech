@@ -6,6 +6,7 @@ import { AboutSentence } from "../../components/AboutSentence";
 import sentencesJSON from "../../store/sentences.json";
 
 import styles from "./AboutPage.module.scss";
+import { ProjectsButton } from "../../components/ProjectsButton";
 
 const sentences: ISentence[] = sentencesJSON as ISentence[];
 
@@ -13,7 +14,9 @@ export const AboutPage: React.FC = () => {
   return (
     <div className={"page " + styles.aboutPage}>
       <AboutCard />
+      {/* TODO: make here arrow */}
       <AboutSentencesList />
+      <ProjectsButton />
     </div>
   );
 };

@@ -35,7 +35,7 @@ export const AboutCard: React.FC = () => {
           </div>
           <div className={styles.content}>
             <div>
-              <div className={styles.cardTitle}>Blockchain</div>
+              <div className={styles.cardTitle}>Blockchain experts</div>
               <div className={styles.cardDesc}>
                 {isMobile ? desc.slice(0, 59) + "...." : desc}
               </div>

@@ -34,7 +34,7 @@ export const AboutSentence: React.FC<IAboutSentenceProps> = ({
       className={styles.sentenceContainer}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true }}
+      viewport={{ once: true, amount: 0.2 }}
     >
       <motion.div variants={animation} custom={delay} className={sentenceClass}>
         {children}
