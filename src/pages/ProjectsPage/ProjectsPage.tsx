@@ -1,17 +1,18 @@
 import React from "react";
-import { Sentence } from "../../components/Sentence";
-import { ISentence } from "../../models/Sentence";
+import { Sentence } from "../../components/ui/Sentence";
+import withSenrenceAnimation from "../../hoc/withSentenceAnimation";
+import { ISentence } from "../../models/ISentence";
 import projectsSentences from "../../store/projects-sentences.json";
 
 export const ProjectsPage = () => {
   return (
     <div className="page">
-      <ProjectsSentencesList />
+      <MProjectsSentenceList />
     </div>
   );
 };
 
-const ProjectsSentencesList: React.FC = () => {
+const ProjectsSentenceList: React.FC = () => {
   const format = (sentence: ISentence) => {
     return (
       <a href={sentence.text} target="__blank" rel="noreferrer">
@@ -30,8 +31,8 @@ const ProjectsSentencesList: React.FC = () => {
     return (
       <Sentence
         key={sentence.id}
-        delay={sentence.id + 1}
-        direction={sentence.direction}
+        delay={sentence.id}
+        sentencePosition={sentence.position}
       >
         {sentenceText}
       </Sentence>
@@ -40,3 +41,5 @@ const ProjectsSentencesList: React.FC = () => {
 
   return <>{(projectsSentences as ISentence[]).map(createSentenceElement)}</>;
 };
+
+const MProjectsSentenceList = withSenrenceAnimation(ProjectsSentenceList);

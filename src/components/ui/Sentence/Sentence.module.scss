@@ -1,0 +1,36 @@
+.sentenceContainer {
+  display: flex;
+  &Right {
+    @extend .sentenceContainer;
+    justify-content: end;
+    .sentence {
+      transform-origin: 100% 50%;
+      border-radius: 0;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+  }
+}
+
+.sentence {
+  background-color: #fff;
+  font-size: 25px;
+  overflow: hidden;
+  padding: 10px 20px;
+  position: relative;
+  transform-origin: left;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  @media screen and (max-width: 900px) {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 555px) {
+    max-width: 300px;
+  }
+}

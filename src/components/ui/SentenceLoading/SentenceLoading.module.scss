@@ -1,0 +1,16 @@
+.loadingContainer {
+  padding: 10px 0;
+
+  &Right {
+    float: right;
+  }
+}
+
+.circle {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 2px;
+}

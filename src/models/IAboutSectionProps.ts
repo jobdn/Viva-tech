@@ -1,7 +1,7 @@
-import { SentenceDirection } from "../models/Sentence";
+import { SentencePosition } from "./ISentence";
 
 export interface IAboutSentenceProps {
   children: React.ReactNode;
   delay: number;
-  direction: SentenceDirection;
+  sentencePosition: SentencePosition;
 }

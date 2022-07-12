@@ -3,7 +3,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import { useTransition, animated } from "react-spring";
 
 import { AppLayout } from "../AppLayout";
-import { Menu } from "../Menu";
+import { Menu } from "../ui/Menu";
 import { AboutPage } from "../../pages/AboutPage";
 import { TeamPage } from "../../pages/TeamPage";
 import { ProjectsPage } from "../../pages/ProjectsPage";
