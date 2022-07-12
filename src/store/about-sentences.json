@@ -2,31 +2,31 @@
   {
     "id": 0,
     "text": "Hi, we have two Blockchain Developers, which are experts in this area.",
-    "direction": "Left"
+    "position": "Left"
   },
   {
     "id": 1,
     "text": "Our team can do quality work and can audit smart contracts, so you can be confident.",
-    "direction": "Right"
+    "position": "Right"
   },
   {
     "id": 2,
     "text": "We can take your order and at the same time monitor its quality.",
-    "direction": "Left"
+    "position": "Left"
   },
   {
     "id": 3,
     "text": "So that there are no vulnerabilities.",
-    "direction": "Left"
+    "position": "Left"
   },
   {
     "id": 4,
     "text": "Write to us if you're ready to cooperate.",
-    "direction": "Right"
+    "position": "Right"
   },
   {
     "id": 5,
     "text": "And we'll discuss all details.",
-    "direction": "Left"
+    "position": "Left"
   }
 ]

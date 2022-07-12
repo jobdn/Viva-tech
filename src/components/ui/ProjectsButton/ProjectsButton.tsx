@@ -13,6 +13,9 @@ const animation = {
   },
   visible: {
     opacity: 1,
+    transition: {
+      duration: 35,
+    },
   },
 };
 
@@ -24,7 +27,6 @@ export const ProjectsButton = () => {
       initial="hidden"
       whileInView="visible"
       variants={animation}
-      viewport={{ amount: 0.9 }}
       className={styles.btnContainer}
     >
       <Button

@@ -1,6 +1,6 @@
 import React from "react";
 
-import blockchaimImg from "../../assets/img/blockchain.png";
+import blockchaimImg from "../../../assets/img/blockchain.png";
 
 import styles from "./AboutCard.module.scss";
 

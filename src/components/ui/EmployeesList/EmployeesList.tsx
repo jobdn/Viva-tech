@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import { EmployeeCard } from "../EmployeeCard";
-import yemployees from "../../store/employees.json";
+import yemployees from "../../../store/employees.json";
 
 const StyledEmployeesList = styled.div`
   display: flex;

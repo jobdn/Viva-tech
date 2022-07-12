@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { GithubFilled, LinkedinFilled } from "@ant-design/icons";
 
-import { IYemployee } from "../../models/Yemployee";
+import { IYemployee } from "../../../models/IYemployee";
 
 import styles from "./EmployeeCard.module.scss";
 
