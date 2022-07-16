@@ -1,7 +1,7 @@
-# Metamorphosis Site
+# Viva tech
 
 <p align="center">
-      <img src="https://i.ibb.co/KGm6XLz/metamphs.png" alt="metamorphosis-logo" width="400" height="400">
+      <img src="https://i.ibb.co/KGm6XLz/metamphs.png" alt="viva-logo" width="300" height="300">
 </p>
 
 <p align="center">
@@ -14,14 +14,16 @@
 - React/Typescript
 - Redux/toolkit
 - Sass
+- react-spring
+- framer-motion
 
 ## About
 
-The website-portfolio of the Metamorphosis Team
+The website-portfolio of the Viva Tech Team
 
 ## Distribute
 
-- [Metamorphosis](https://metamorphosis-team.vercel.app/)
+- [Viva](https://viva-tech.vercel.app/)
 
 ## Developers
 
