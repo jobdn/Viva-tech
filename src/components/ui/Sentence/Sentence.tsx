@@ -49,8 +49,9 @@ export const Sentence: React.FC<IAboutSentenceProps> = ({
   React.useEffect(() => {
     const id = setTimeout(() => {
       setIsLoading(false);
-      // the sentence appears in 5s
-    }, STAGGER_CHILDREN * 1000 * delay + 5000);
+      // the sentence appears in 3 seconds
+    }, STAGGER_CHILDREN * 1000 * delay + 3000);
+    
     return () => clearTimeout(id);
   }, []);
 

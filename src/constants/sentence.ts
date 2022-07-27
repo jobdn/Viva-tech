@@ -1,4 +1,4 @@
-export const STAGGER_CHILDREN = 6;
+export const STAGGER_CHILDREN = 3;
 
 export const aboutSentenceListVars = {
   end: {
