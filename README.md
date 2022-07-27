@@ -1,7 +1,7 @@
 # Viva tech
 
 <p align="center">
-      <img src="https://i.ibb.co/KGm6XLz/metamphs.png" alt="viva-logo" width="300" height="300">
+      <img src="https://i.ibb.co/KGm6XLz/metamphs.png" alt="Tient-logo" width="300" height="300">
 </p>
 
 <p align="center">
@@ -19,11 +19,11 @@
 
 ## About
 
-The website-portfolio of the Viva Tech Team
+The website-portfolio of the Tient Team
 
 ## Distribute
 
-- [Viva](https://viva-tech.vercel.app/)
+- [Tient](https://tient.vercel.app/)
 
 ## Developers
 
