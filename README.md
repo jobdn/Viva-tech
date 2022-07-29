@@ -1,4 +1,4 @@
-# Viva tech
+# Tient
 
 <p align="center">
       <img src="https://i.ibb.co/KGm6XLz/metamphs.png" alt="Tient-logo" width="300" height="300">
