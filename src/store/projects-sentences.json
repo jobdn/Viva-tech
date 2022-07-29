@@ -21,16 +21,5 @@
     "text": "https://github.com/NiceArti/Trading-Platform",
     "position": "Left",
     "desc": "Platform for trading"
-  },
-  {
-    "id": 4,
-    "text": "One of our developers is involved in development of this project:",
-    "position": "Right"
-  },
-  {
-    "id": 5,
-    "text": "https://app.ixswap.io/",
-    "position": "Left",
-    "desc": "ixswap crypto exchange"
   }
 ]
