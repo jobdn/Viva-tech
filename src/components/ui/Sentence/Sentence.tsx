@@ -53,16 +53,16 @@ export const Sentence: React.FC<IAboutSentenceProps> = ({
     }, STAGGER_CHILDREN * 1000 * delay + 3000);
     
     return () => clearTimeout(id);
-  }, []);
+  }, [delay]);
 
   return (
     <motion.div variants={sentenceVars} className={sentenceContainerClass}>
       {isLoading ? (
         <SentenceLoading loadingPosition={sentencePosition} />
       ) : (
-        <motion.div variants={textVars} className={styles.sentence}>
+        <motion.article variants={textVars} className={styles.sentence}>
           {children}
-        </motion.div>
+        </motion.article>
       )}
     </motion.div>
   );
