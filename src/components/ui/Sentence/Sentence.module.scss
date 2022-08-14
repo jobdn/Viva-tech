@@ -1,8 +1,11 @@
 .sentenceContainer {
   display: flex;
+  width: 100%;
+
   &Right {
     @extend .sentenceContainer;
     justify-content: end;
+
     .sentence {
       transform-origin: 100% 50%;
       border-radius: 0;
