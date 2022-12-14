@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 import { EmployeeCard } from "../EmployeeCard";
-import yemployees from "../../../store/employees.json";
+
+import employees from "store/employees.json";
 
 const StyledEmployeesList = styled.div`
   display: flex;
@@ -15,8 +16,8 @@ const StyledEmployeesList = styled.div`
 export const EmployeesList: React.FC = () => {
   return (
     <StyledEmployeesList>
-      {yemployees.map((yemployee) => (
-        <EmployeeCard key={yemployee.id} yemployee={yemployee} />
+      {employees.map((employee) => (
+        <EmployeeCard key={employee.id} employee={employee} />
       ))}
     </StyledEmployeesList>
   );

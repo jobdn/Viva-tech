@@ -1,15 +1,15 @@
-import { motion } from "framer-motion";
 import React from "react";
-import { aboutSentenceListVars } from "../constants/sentence";
+import { motion } from "framer-motion";
 
-export default function withSenrenceAnimation(WrappedComponent: React.FC) {
+import { aboutSentenceListVars } from "constants/sentence";
+
+export default function withSentenceAnimation(WrappedComponent: React.FC) {
   return function () {
     return (
       <motion.div
         variants={aboutSentenceListVars}
         initial="start"
         animate="end"
-        className="withSenrenceAnimation"
       >
         <WrappedComponent />
       </motion.div>

@@ -1,15 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import { ISentence } from "../../models/ISentence";
-import { AboutCard } from "../../components/ui/AboutCard";
-import { Sentence } from "../../components/ui/Sentence";
-import { ProjectsButton } from "../../components/ui/ProjectsButton";
-import aboutSentencesJSON from "../../store/about-sentences.json";
+import { ISentence } from "models/ISentence";
+import { AboutCard } from "components/ui/AboutCard";
+import { Sentence } from "components/ui/Sentence";
+import aboutSentencesJSON from "store/about-sentences.json";
 
 import styles from "./AboutPage.module.scss";
-import { aboutSentenceListVars } from "../../constants/sentence";
-import withSenrenceAnimation from "../../hoc/withSentenceAnimation";
+import { aboutSentenceListVars } from "constants/sentence";
+import withSentenceAnimation from "hoc/withSentenceAnimation";
 
 const sentences: ISentence[] = aboutSentencesJSON as ISentence[];
 
@@ -18,7 +17,7 @@ export const AboutPage: React.FC = () => {
     <div className={"page " + styles.aboutPage}>
       <AboutCard />
       <MAboutSentenceList />
-      {/* <ProjectsButton /> */}
+
     </div>
   );
 };
@@ -39,4 +38,4 @@ const AboutSentenceList: React.FC = () => {
   );
 };
 
-const MAboutSentenceList = withSenrenceAnimation(AboutSentenceList);
+const MAboutSentenceList = withSentenceAnimation(AboutSentenceList);

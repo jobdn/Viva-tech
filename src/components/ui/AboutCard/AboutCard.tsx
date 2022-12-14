@@ -1,16 +1,15 @@
 import React from "react";
 
-import blockchaimImg from "../../../assets/img/blockchain.png";
+import blockchainImg from "../../../assets/img/blockchain.png";
 
 import styles from "./AboutCard.module.scss";
 
-export const AboutCard: React.FC = () => {
-  const [isMobile, setIsMobile] = React.useState(false);
-
-  // TODO: make it as a props
-  const desc = `We are a team of enthusiastic developers. 
+const desc = `We are a team of enthusiastic developers. 
     We can make the use of blockchain technologies easier for 
     users who are not familiar with them!`;
+
+export const AboutCard: React.FC = () => {
+  const [isMobile, setIsMobile] = React.useState(false);
 
   React.useEffect(() => {
     function checkMobile() {
@@ -41,7 +40,7 @@ export const AboutCard: React.FC = () => {
               </div>
             </div>
             <div className={styles.cardImg}>
-              <img src={blockchaimImg} alt="card-img"></img>
+              <img src={blockchainImg} alt="Card of About section"></img>
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-export interface IYemployee {
+export interface IEmployee {
   id: number;
   avatar: string;
   position: string;

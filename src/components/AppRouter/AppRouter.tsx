@@ -30,7 +30,7 @@ export const AppRouter: React.FC = () => {
       <animated.div style={props}>
         <Routes>
           <Route path="/" element={<AppLayout />}>
-            <Route index element={<Menu />}></Route>
+            <Route index element={<Menu />} />
             <Route path="team" element={<TeamPage />} />
             <Route path="about" element={<AboutPage />} />
             <Route path="projects" element={<ProjectsPage />} />

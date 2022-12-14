@@ -1,11 +1,6 @@
 import React from "react";
 
-interface IButtonProps {
-  icon: any;
-  label: string;
-  onClick?: () => void;
-  className?: string;
-}
+import { IButtonProps } from "models/IButtonProps";
 
 export const Button: React.FC<IButtonProps> = ({
   icon,

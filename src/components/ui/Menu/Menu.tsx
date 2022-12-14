@@ -1,9 +1,9 @@
 import React from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { Row, Col } from "antd";
 
 import styles from "./Menu.module.scss";
-import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 const StyledMenu = styled(Row)`
   height: 100%;

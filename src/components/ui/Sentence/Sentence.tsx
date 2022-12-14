@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import { IAboutSentenceProps } from "../../../models/IAboutSectionProps";
+import { IAboutSentenceProps } from "models/IAboutSectionProps";
 
 import styles from "./Sentence.module.scss";
 import { SentenceLoading } from "../SentenceLoading";
-import { STAGGER_CHILDREN } from "../../../constants/sentence";
+import { STAGGER_CHILDREN } from "constants/sentence";
 
 const sentenceVars = {
   start: {

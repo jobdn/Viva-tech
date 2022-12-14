@@ -1,8 +1,9 @@
 import React from "react";
-import { Sentence } from "../../components/ui/Sentence";
-import withSenrenceAnimation from "../../hoc/withSentenceAnimation";
-import { ISentence } from "../../models/ISentence";
-import projectsSentences from "../../store/projects-sentences.json";
+
+import { Sentence } from "components/ui/Sentence";
+import withSentenceAnimation from "hoc/withSentenceAnimation";
+import { ISentence } from "models/ISentence";
+import projectsSentences from "store/projects-sentences.json";
 
 export const ProjectsPage = () => {
   return (
@@ -42,4 +43,4 @@ const ProjectsSentenceList: React.FC = () => {
   return <>{(projectsSentences as ISentence[]).map(createSentenceElement)}</>;
 };
 
-const MProjectsSentenceList = withSenrenceAnimation(ProjectsSentenceList);
+const MProjectsSentenceList = withSentenceAnimation(ProjectsSentenceList);
